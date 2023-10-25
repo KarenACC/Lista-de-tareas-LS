@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=League+Spartan:wght@400;500;700&family=Montserrat&family=Nunito&family=Quicksand&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="saludo">
+            <div id="fecha">
+                <p>Miércoles 18 de octubre</p>
+            </div>
+            <h1>Hola, Karen Castro</h1>
+            <span>¿Qué vamos a hacer hoy?</span>
+        </div>
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Agregar una tarea">
+            <span class="material-symbols-outlined" id="enter">send</span>
+            
+        </div>
+        <div class="seccion-tareas">
+            <h3>Estos son tus pendientes</h3>
+            <ul id="lista">
+                <!-- <li> -->
+                    <!-- A  los botones de marcar como realizado y de eliminar tarea, se les agrega un id=0 que se maneja con js -->
+                    <!-- <button class="checker" id="0" data="realizado"></button>
+                    <p class="text">Terminar esta to do list </p>
+                    <span class="material-symbols-outlined" data="eliminado" id="0">delete</span>
+                </li> -->
+            </ul>
+        </div>
+        <div class="seccion-completadas"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

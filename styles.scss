@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables de colores
+
+$morado:#9a67ea;
+$azul-claro: #04d4c3; 
+$azul: #2a73c2;
+$verde: #2c7b90;
+$blanco: #fafafb;
+
+body{
+    background: linear-gradient(to bottom, $morado, $azul-claro );
+    height: 100vh;
+    display: flex;
+    color: $blanco;
+    font-family: 'Quicksand', sans-serif;
+    }
+
+    .contenedor{
+        max-width: 80%;
+        width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+    // la clase line-through se irá poniendo y quitando mediante js
+    .line-through{
+        text-decoration: line-through;
+        color: $verde;
+    }
+
+    .checked{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: none;
+        background: $azul-claro;
+    }
+
+    // Sección de saludo
+    .saludo {
+        margin-bottom: 50px;
+        h1{
+            margin: 10px 0;
+        }
+        span{
+            letter-spacing: 1px;
+        }
+    }
+
+    #fecha{
+        padding: 50px 0px 5px 0px;
+    }
+
+    // Sección de Agregar Tarea 
+
+    .agregar-tarea{
+        width: 100%;
+        height: 70px;
+        background-color: $blanco;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 20px;
+
+            input{
+                background-color: $blanco;
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                padding: 10px;
+                border: none;
+            }
+
+            input::placeholder{
+                color: $morado;
+                font-size: 1rem;
+            }
+
+            span{
+                color: $morado;
+                font-size: 45px;
+            }
+            
+            span:hover{
+                scale: (1.1);
+                cursor: pointer;
+            }
+        
+    }
+
+    // Sección de la lista de tareas 
+
+    .seccion-tareas {
+        h3{
+            margin: 20px 0;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                background: linear-gradient(to bottom, $azul-claro, $verde);
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+
+                    .checker{
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        border: none;
+                    }
+                    .checker:hover{
+                        cursor: pointer;
+                        border: 1px solid $azul-claro;
+
+                    }
+                    span:hover{
+                        cursor: pointer;
+                        color: $azul-claro;
+                    }
+
+            }
+        }
+
+    }

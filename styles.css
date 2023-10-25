@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #9a67ea, #04d4c3);
+  height: 100vh;
+  display: flex;
+  color: #fafafb;
+  font-family: "Quicksand", sans-serif;
+}
+
+.contenedor {
+  max-width: 80%;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #2c7b90;
+}
+
+.checked {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #04d4c3;
+}
+
+.saludo {
+  margin-bottom: 50px;
+}
+.saludo h1 {
+  margin: 10px 0;
+}
+.saludo span {
+  letter-spacing: 1px;
+}
+
+#fecha {
+  padding: 50px 0px 5px 0px;
+}
+
+.agregar-tarea {
+  width: 100%;
+  height: 70px;
+  background-color: #fafafb;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.agregar-tarea input {
+  background-color: #fafafb;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+}
+.agregar-tarea input::-moz-placeholder {
+  color: #9a67ea;
+  font-size: 1rem;
+}
+.agregar-tarea input::placeholder {
+  color: #9a67ea;
+  font-size: 1rem;
+}
+.agregar-tarea span {
+  color: #9a67ea;
+  font-size: 45px;
+}
+.agregar-tarea span:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.seccion-tareas h3 {
+  margin: 20px 0;
+}
+.seccion-tareas ul {
+  list-style: none;
+}
+.seccion-tareas ul li {
+  background: linear-gradient(to bottom, #04d4c3, #2c7b90);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.seccion-tareas ul li .checker {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+}
+.seccion-tareas ul li .checker:hover {
+  cursor: pointer;
+  border: 1px solid #04d4c3;
+}
+.seccion-tareas ul li span:hover {
+  cursor: pointer;
+  color: #04d4c3;
+}/*# sourceMappingURL=styles.css.map */
